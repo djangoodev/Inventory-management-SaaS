@@ -1,0 +1,15 @@
+@import "../../../assets/scss/mixins";
+.profile {
+  padding: 30px;
+  min-height: 600px!important;
+
+  &__event {
+    margin-top: 10px;
+    border-top: 1px solid $gray-border;
+    padding: 20px 0px;
+    &__head {
+      font-weight: bold;
+      padding: 20px 0px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.category-manage {
+  display: flex;
+  flex-direction: column;
+  &__dir {
+
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+
+    &__list {
+      width: 300px;
+      padding: 10px;
+      min-height: 600px;
+    }
+
+    &__content {
+      margin-left: 10px;
+      width: calc(#{100%} - 300px) !important;
+      height: calc(#{100vh} - 100px) !important;
+    }
+  }
+}

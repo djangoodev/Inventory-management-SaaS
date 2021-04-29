@@ -1,0 +1,35 @@
+@import "../../../assets/scss/mixins";
+.membership {
+  min-height: 600px;
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+
+  &__title {
+    font-size: 25px;
+    border-bottom: 1px solid $gray-border;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 40px;
+    border-bottom: 1px solid $gray-border;
+  }
+
+  &__features {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__feature {
+    padding: 4px;
+    font-size: 20px;
+  }
+  &__bottom {
+    float: bottom;
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    margin-bottom: 20px;
+  }
+}

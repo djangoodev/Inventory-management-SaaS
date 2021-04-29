@@ -1,0 +1,19 @@
+@import "../../../assets/scss/mixins";
+.security {
+  padding: 20px;
+  &__pwd {
+    margin-top: 20px;
+    border: 1px solid $gray-border;
+    border-radius: 5px;
+    padding: 20px 50px;
+    &__confirm {
+      padding-bottom: 30px;
+    }
+    &__head {
+      font-weight: bold;
+    }
+    .ant-form-item{
+      margin-bottom: 0px!important;
+    }
+  }
+}

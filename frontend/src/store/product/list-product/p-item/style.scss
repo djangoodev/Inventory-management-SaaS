@@ -1,0 +1,18 @@
+.p-item {
+  padding-bottom: 20px;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+  }
+  img {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 70%;
+    height: 150px;
+    object-fit: contain;
+    overflow: hidden;
+
+  }
+}

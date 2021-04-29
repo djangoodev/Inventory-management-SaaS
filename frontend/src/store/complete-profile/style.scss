@@ -1,0 +1,89 @@
+@import '../../assets/scss/mixins';
+
+.complete-profile{
+  padding: 50px;
+  max-width: rem(1000);
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 37px;
+  }
+
+  &__body {
+    &__content{
+      text-align: left;
+      margin-top: 16px;
+      border: 1px dashed #e9e9e9;
+      border-radius: 6px;
+      background-color: #fafafa;
+      min-height: 200px;
+      padding: 40px 100px 40px 100px;
+
+      &__description {
+        padding-bottom: 10px;
+      }
+
+      &__radio {
+        color: #514d6a;
+      }
+
+      &__upload {
+        margin-bottom: 40px;
+
+        :global {
+          .ant-upload-list {
+            display: contents;
+          }
+        }
+
+        &__modal {
+          position: absolute;
+          left: 50%;
+          top: calc(10%);
+        }
+
+        &__custom {
+          display: contents;
+        }
+      }
+
+      &__bottom {
+        text-align: right;
+        margin-bottom: 40px;
+      }
+    }
+    .steps-action {
+      margin-top: 24px;
+    }
+  }
+}
+
+.confirm-modal {
+  padding: 10px;
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    padding: 10px;
+  }
+  &__promo {
+    padding: 10px;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__button {
+    text-align: right;
+  }
+}
+.ant-upload-list-picture-card .ant-upload-list-item {
+  width: calc(100% / 6 - 8px)!important;
+}
+
+.ant-upload ant-upload-select ant-upload-select-picture-card {
+  clear: both!important;
+}
+
+

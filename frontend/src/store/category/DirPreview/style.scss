@@ -1,0 +1,11 @@
+//@import '../../../assets/styles/mixins';
+
+.dir-body {
+  width: 100%;
+  padding: 10px 0px 0px 10px;
+  a {
+    &:hover{
+      color: blue!important;
+    }
+  }
+}

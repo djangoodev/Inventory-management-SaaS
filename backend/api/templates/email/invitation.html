@@ -1,0 +1,29 @@
+{% load i18n %}
+
+{% block subject %}
+{% blocktrans %}Invitation on swivel{% endblocktrans %}
+{% endblock subject %}
+
+{% block text_body %}
+{% blocktrans %}You're receiving this email because you are in to finish activation process on swivel.{% endblocktrans %}
+
+{% trans "Please go to the following page to get invitation" %}
+http://swivel.net/invitation?store={{ store }}&token={{ token }}
+
+{% trans "Thanks for using our site!" %}
+
+{% blocktrans %}The swivel team{% endblocktrans %}
+{% endblock text_body %}
+
+{% block html_body %}
+{% blocktrans %}
+<p>You're receiving this email because you need to finish activation process on swivel.</p>{% endblocktrans %}
+
+<p>{% trans "Please go to the following page to get invitation" %}</p>
+<p><a href="http://swivel.net/invitation?store={{ store }}&token={{ token }}">http://dropify.net/invitation?store={{ store }}&token={{ token }}</a></p>
+
+<p>{% trans "Thanks for using our site!" %}</p>
+
+<p>{% blocktrans %}The swivel team{% endblocktrans %}</p>
+
+{% endblock html_body %}

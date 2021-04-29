@@ -1,0 +1,88 @@
+@import '../../../assets/scss/mixins';
+
+.personal-info {
+  &__head {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 9px;
+  }
+
+  .form-item {
+    padding: 0px 2px!important;
+    label {
+      color: darkgrey;
+    }
+  }
+
+  &__payment {
+    padding: 30px 0px;
+  }
+
+  &__button {
+    padding-top: 50px;
+  }
+  &__avatar {
+    display: table;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid $gray-darken;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    &:hover {
+      .avatar-over {
+        visibility: visible;
+        transition: 0.7s;
+      }
+      .account-setting__avatar__clip {
+        background: rgba(72, 64, 64, 0.3);
+        transition: 0.7s;
+      }
+    }
+    &:active {
+      .avatar-over {
+        visibility: visible;
+        background: rgba(72, 64, 64, 0.3);
+        transition: 0.7s;
+      }
+      .account-setting__avatar__clip {
+        background: rgba(72, 64, 64, 0.4);
+        transition: 0.7s;
+      }
+    }
+
+    img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      //position: absolute;
+      //clip: rect(0px,600px,120px,0px);
+    }
+    &__clip {
+      font-size: 25px;
+      color: $black-lighten;
+      position: absolute;
+      width: 100%;
+      height: 35%;
+      top:65%;
+      z-index: 2;
+      background: rgba(185, 185, 185, 0.5);
+    }
+
+    .avatar-over{
+      visibility: hidden;
+      position: absolute;
+      top: 0%;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: rgba(72, 64, 64, 0.2);
+    }
+  }
+  .ant-form-vertical .ant-form-item-label {
+    padding: 0px!important;
+  }
+}

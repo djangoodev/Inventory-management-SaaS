@@ -1,0 +1,15 @@
+
+.introduce {
+  padding: 100px 0px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  &-header {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  &-detail {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}

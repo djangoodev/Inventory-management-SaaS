@@ -1,0 +1,18 @@
+.lgt {
+  padding-bottom: 70px;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.3s linear;
+  }
+  img {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    overflow: hidden;
+
+  }
+}

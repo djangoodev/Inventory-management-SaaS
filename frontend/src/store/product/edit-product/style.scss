@@ -1,0 +1,41 @@
+.edit-pdt {
+  padding: 20px;
+  max-width: 1200px;
+  &__head {
+    button {
+      float: right;
+    }
+  }
+  &__button {
+    float: right;
+  }
+  &__group {
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    &__head {
+      position: absolute;
+      width: fit-content;
+      transform: translate(7px, -30px);
+      background: white;
+      padding: 0px 10px;
+      font-weight: bold;
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0px!important;
+  }
+  .ant-form-item-label {
+    transform: translateY(10px);
+    label {
+      color: grey;
+    }
+  }
+}
+
+.form-item {
+  padding: 0px 10px;
+}

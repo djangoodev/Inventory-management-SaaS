@@ -1,0 +1,19 @@
+@import '../../../assets/scss/mixins';
+.store-info {
+  width: 100%;
+  &--head {
+    font-weight: bold;
+  }
+  .form-item {
+    padding: 0px 2px!important;
+    label {
+      width: 100px;
+      color: darkgrey;
+      transform: translateY(4px);
+    }
+  }
+  &--map {
+    width: 100%;
+    height: 400px;
+  }
+}

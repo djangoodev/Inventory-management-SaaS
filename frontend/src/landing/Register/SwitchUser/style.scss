@@ -1,0 +1,11 @@
+.switch {
+  display: flex;
+  &__item {
+    margin: 10px;
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    height: 90px;
+  }
+}

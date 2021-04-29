@@ -1,0 +1,22 @@
+.phone-verification {
+  &--head {
+    font-weight: bold;
+    padding: 20px 0px;
+  }
+  &--item {
+    padding: 5px 0px;
+    label {
+      width: 150px;
+      text-align: right;
+    }
+    a {
+      color: #0088ff!important;
+      margin-left: 150px;
+      text-align: right;
+    }
+
+  }
+  &--bottom {
+    padding: 20px 0px;
+  }
+}

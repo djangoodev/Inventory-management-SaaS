@@ -1,0 +1,10 @@
+.av-upload {
+  display: flex;
+  flex-direction: row;
+  &__prev {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px dot-dot-dash grey;
+  }
+}
